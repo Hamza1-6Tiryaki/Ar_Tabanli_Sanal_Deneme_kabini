@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'ekranlar/ana_ekran.dart';
 
 void main() {
   runApp(const MyApp());
@@ -10,22 +11,12 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      title: 'AR Sanal Giyinme Odası',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         useMaterial3: true,
       ),
-      home: const AnaSayfa(),
-    );
-  }
-}
-
-class AnaSayfa extends StatelessWidget {
-  const AnaSayfa({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return const Scaffold(
-      body: SizedBox.expand(),
+      home: const AnaEkran(),
     );
   }
 }
